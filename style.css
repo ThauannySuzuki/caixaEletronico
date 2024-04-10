@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinhar ao topo */
+    background-image: url("img/img_bancok.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.caixa_entrada{
+     position: fixed;
+    background-color: #fafafa70;
+    width: 45%;
+    height: 500px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 50%;
+ 
+}
+
+.div_saldo, .div_saque, .div_deposito, .div_transferencia, .div_sair{
+    visibility: hidden;
+    
+    
+}
+
+.botoes{
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.botao1{
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+}
+
+#B1, #B2, #B3, #B4{
+ margin: 0 30px;
+ padding: 20px 40px;
+ border-radius: 5px;
+
+}
+
+.botao3{
+    margin-top: 15px;
+    padding: 20px 40px;
+    border-radius: 50px;
+}
+
+#saldo, #saque, #deposito, #trans, #sair{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #0c2969ef;
+    top: 50%;
+    left: 25%;
+    color: #fff;
+}
+
+.fechar{
+    float: right;
+    margin-right: 2px;
+    border-radius: 5px;
+}
+
+h3{
+    border-bottom: 1px solid #fff;
+}

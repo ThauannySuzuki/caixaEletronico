@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Eletrônico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="caixa_entrada">
+        <h1>Bem-vindo ao nosso caixa eletrônico! <br /> Aqui você pode realizar suas transações bancárias de forma rápida e segura.</h1>
+        <h2>Selecione a opção que deseja:</h2>
+
+        <div class="botoes">
+        <div class="botao1">
+        <input id="B1" type="button" value="saldo" onclick="modo_saldo()">
+        <input id="B2" type="button" value="saque" onclick="modo_saque()">
+        </div>
+        <div class="botao2">
+        <input id="B3" type="button" value="deposito" onclick="modo_deposito()">
+        <input id="B4" type="button" value="transferencia" onclick="modo_trans()">
+        </div>
+        <input class="botao3" type="button" value="sair" onclick="modo_sair()">
+    </div>   
+
+        <div class="div_saldo">
+            <div id="saldo">
+                <div class="fechar" onclick="fechar_modal()">X</div>
+                <h3>Digite o seu saldo:</h3>
+                <p>Por favor, digite um valor maior que 0</p>
+                <input type="number" value="ver_saldo" id="saldoinput">
+                <button onclick="definirSaldo()">Enviar</button>
+            </div>
+        </div>
+
+
+        <div class="div_saque">
+            <div id="saque">
+                <div class="fechar" onclick="fechar_modal()">X</div>
+                <h3>Digite o valor do seu saque:</h3>
+                <p>Por favor, digite um valor maior que 0</p>
+                <input type="number" value="fazer_saque" id="saqueinput">
+                <button onclick="definirSaque()">Enviar</button>
+            </div>
+        </div>
+
+
+        <div class="div_deposito">
+            <div id="deposito">
+                <div class="fechar" onclick="fechar_modal()">X</div>
+                <h3>Digite o valor do seu depósito:</h3>
+                <p>Por favor, digite um valor maior que 0</p>
+                <input type="number" value="fazer_deposito" id="depositoinput">
+                <button onclick="definirDeposito()">Enviar</button>
+            </div>
+        </div>
+
+
+        <div class="div_transferencia">
+            <div id="trans">
+                <div class="fechar" onclick="fechar_modal()">X</div>
+                <h3>Digite a conta que deseja transferir:</h3>
+                <input type="number" value="conta_tranferencia" id="contaTransferenciaInput">
+
+                <h3>Digite o valor que deseja transferir:</h3>
+                <p>Por favor, digite um valor maior que 0</p>
+                <input type="number" value="fazer_tranferencia" id="valorTransferenciaInput">
+                <button onclick="definirTransferencia()">Enviar</button>
+            </div>
+        </div>
+
+
+        <div class="div_sair">
+            <div id="sair">
+                <div class="fechar" onclick="fechar_modal()"></div>
+
+                <h3>Tem certeza que deseja sair?</h3>
+                <button onclick="cancelar()">Voltar</button>
+                <button onclick="sair()">Sair</button>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
